@@ -1,6 +1,5 @@
 ---
-SN_URL: https://dev17556.service-now.com
-SN_USER=miduser
-SN_PASSWD=miduser
-SN_MID_NAME=ansible-mid1
-
+SN_URL1: https://dev17556.service-now.com
+SN_USER1: miduser
+SN_PASSWD1: miduser
+SN_MID_NAME1: ansible-mid1
