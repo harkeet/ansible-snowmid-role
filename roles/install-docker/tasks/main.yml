@@ -1,1 +1,10 @@
-
+---
+    - name: Run Mid Server on host
+      docker_container:
+        name: docker_midserver
+        image: andrekosak/sn-midserver:kingston
+        env:
+           SN_URL={{ SN_URL1 }}
+           SN_USER={{ SN_USER1 }}
+           SN_PASSWD={{ SN_PASSWD1 }}
+           SN_MID_NAME={{ SN_MID_NAME1 }}
