@@ -1,8 +1,10 @@
 ---
     - name: Run Mid Server on host
       docker_container:
-        name: docker_midserver
+        name: {{ docker_name }}
         image: andrekosak/sn-midserver:kingston
+        volumes:
+          - /tmp/{{ docker_name }}/logs:/opt/agent/logs
         env:
            SN_URL={{ SN_URL1 }}
            SN_USER={{ SN_USER1 }}
