@@ -1,5 +1,6 @@
 ---
+docker_name: sn-mid-docker2
 SN_URL1: https://dev17556.service-now.com
 SN_USER1: miduser
 SN_PASSWD1: miduser
-SN_MID_NAME1: ansible-mid1
+SN_MID_NAME1: snow-mid-docker2
