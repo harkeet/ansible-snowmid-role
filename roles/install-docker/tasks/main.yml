@@ -1,7 +1,7 @@
 ---
     - name: Run Mid Server on host
       docker_container:
-        name: {{ docker_name }}
+        name: "{{ docker_name }}"
         image: andrekosak/sn-midserver:kingston
         volumes:
           - /tmp/{{ docker_name }}/logs:/opt/agent/logs
