@@ -13,3 +13,15 @@
            
     - name: Check if container is running
       shell: docker ps -a
+      
+    - name: update an incident
+      snow_record:
+        username: admin
+        password: H@rkeet3465
+        instance: dev17556
+        state: present
+        table: x_299265_cr_mid_server_table
+        number: {{ change_request_id }}
+        data:
+          work_notes : "Been working all day on this thing."
+          short_description : "Processesed by Ansible"
