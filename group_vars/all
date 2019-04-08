@@ -4,3 +4,6 @@ SN_URL1: https://dev17556.service-now.com
 SN_USER1: miduser
 SN_PASSWD1: miduser
 SN_MID_NAME1: snow-mid-docker2
+servicenow_instance: "dev17556"
+servicenow_table: "x_299265_cr_mid_server_table"
+servicenow_username: "admin"
