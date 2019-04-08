@@ -12,7 +12,7 @@
            SN_MID_NAME={{ SN_MID_NAME1 }}
            
     - name: Check if container is running
-      shell: docker ps -a
+      shell: uptime
       register: notes
       
     - name: update an incident
