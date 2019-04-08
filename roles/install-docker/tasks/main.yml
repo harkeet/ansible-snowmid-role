@@ -22,7 +22,7 @@
         instance: dev17556
         state: present
         table: x_299265_cr_mid_server_table
-        number: {{ change_request_id }}
+        number: "{{ change_request_id }}"
         data:
-          work_notes : {{ notes }}
+          work_notes : "{{ notes }}"
           short_description : "Processesed by Ansible"
