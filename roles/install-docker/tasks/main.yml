@@ -13,6 +13,7 @@
            
     - name: Check if container is running
       shell: docker ps -a
+      register: notes
       
     - name: update an incident
       snow_record:
@@ -23,5 +24,5 @@
         table: x_299265_cr_mid_server_table
         number: {{ change_request_id }}
         data:
-          work_notes : "Been working all day on this thing."
+          work_notes : {{ notes }}
           short_description : "Processesed by Ansible"
